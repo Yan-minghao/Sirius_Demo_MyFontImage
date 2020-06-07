@@ -64,13 +64,13 @@ public class MyFontImage {
                 }
             }
             //11.通过 ImageIO 方法，把图片重新绘制，并输出
-            ImageIO.write(newImage, "PNG", new FileOutputStream(pathFile));
+            ImageIO.write(newImage, "jpg", new FileOutputStream(pathFile));
         }catch (Exception e){
             e.printStackTrace();
         }
     }
     public static void main(String args[]){
-        MyFontImage.createFongImg("恋爱了","C:\\Users\\Cordova\\Desktop\\1.jpg");
+        MyFontImage.createFongImg("我爱你","C:\\Users\\Cordova\\Desktop\\1.jpg");
         System.out.println("OK");
     }
 
