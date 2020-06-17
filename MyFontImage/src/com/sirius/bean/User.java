@@ -1,4 +1,4 @@
-package com.sirius.vo;
+package com.sirius.bean;
 
 import java.util.Objects;
 

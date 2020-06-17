@@ -42,7 +42,7 @@ public class MyFontImage {
             //2.创建一个2D坐标转换及绘图相关的类 Graphics2D，用来设置每个像素点的颜色、字体大小和字体样式。
             Graphics2D graphics2D = (Graphics2D) newImage.getGraphics();
             //3.设置字体风格、样式和大小
-            graphics2D.setFont(new Font("宋体",Font.BOLD,12));
+            graphics2D.setFont(new Font("宋体",Font.BOLD,6));
             int index = 0;
             //4.下面就是写一个for循环，循环遍历每一个像素点，将每隔12个像素点就替换为文字。
             for(int y = 0; y < image.getHeight(); y += 12){
@@ -70,7 +70,7 @@ public class MyFontImage {
         }
     }
     public static void main(String args[]){
-        MyFontImage.createFongImg("我爱你","C:\\Users\\Cordova\\Desktop\\1.jpg");
+        MyFontImage.createFongImg("618","C:\\Users\\Cordova\\Desktop\\1.png");
         System.out.println("OK");
     }
 
