@@ -1,5 +1,6 @@
 package com.sirius.object;
 
+import com.sirius.bean.User;
 import org.junit.Test;
 
 import java.util.Objects;
