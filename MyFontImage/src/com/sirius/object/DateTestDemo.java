@@ -1,20 +1,12 @@
-package com.sirius.utils;
+package com.sirius.object;
 
-import com.sirius.vo.User;
+import com.sirius.test.User;
 import org.junit.Test;
 
-import java.util.Calendar;
 import java.util.Objects;
 
 public class DateTestDemo {
-    @Test
-    public void test(){
-        Calendar now = Calendar.getInstance();
-        int year = now.get(Calendar.YEAR);
-        int month = now.get(Calendar.MONTH) + 1;
-//        int month = now.get(Calendar.MONTH) + 1;
-        System.out.println("year"+year+"___"+"month::::"+month);
-    }
+
     @Test
     public void objectsTest(){
         User user = new User();
@@ -28,4 +20,5 @@ public class DateTestDemo {
         //4.测试Objects requireNonNull(T obj,String message)
         System.out.println("requireNonNull:"+Objects.requireNonNull(user,"null"));
     }
+
 }
