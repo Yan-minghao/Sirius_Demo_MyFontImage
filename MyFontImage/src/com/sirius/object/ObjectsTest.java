@@ -5,10 +5,10 @@ import org.junit.Test;
 
 import java.util.Objects;
 
-public class DateTestDemo {
+public class ObjectsTest {
 
     @Test
-    public void objectsTest(){
+    public void ObjectsTest(){
         User user = new User();
         User user2 = new User();
         //1.测试Objects isNull
