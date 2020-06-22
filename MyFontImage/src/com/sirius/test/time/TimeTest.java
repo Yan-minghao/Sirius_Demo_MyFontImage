@@ -12,7 +12,7 @@ public class TimeTest {
         Calendar now = Calendar.getInstance();
         int year = now.get(Calendar.YEAR);
         int month = now.get(Calendar.MONTH) + 1;
-//        int month = now.get(Calendar.MONTH) + 1;
+        //int month = now.get(Calendar.MONTH) + 1;
         System.out.println("year"+year+"___"+"month::::"+month);
     }
 
