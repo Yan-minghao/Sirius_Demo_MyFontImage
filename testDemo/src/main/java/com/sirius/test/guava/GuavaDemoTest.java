@@ -27,7 +27,7 @@ public class GuavaDemoTest {
         BigDecimal total = BigDecimal.ZERO;
         for (
                 BigDecimal num : numList) {
-            total = total.add(num);
+                total = total.add(num);
         }
         System.out.println(total);
         //    简化一下：
@@ -55,8 +55,8 @@ public class GuavaDemoTest {
         //    简化：
         String userName = Optional.ofNullable(username).orElse("游客");
         System.out.println(userName);
-    }
 
+    }
 
 
 }

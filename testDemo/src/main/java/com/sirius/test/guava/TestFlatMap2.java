@@ -1,4 +1,4 @@
-package java.com.sirius.test.guava;
+package com.sirius.test.guava;
 
 import com.google.common.collect.ImmutableList;
 
@@ -11,13 +11,14 @@ import java.util.stream.Stream;
 //    从多个集合中取匹配的值
 //    原始方法：
 class TestFlatMap {
+    private   static  List<String> nameListA = ImmutableList.of("素云云", "马云云", "腾花花", "阿娇娇", "马飞飞", "廖妹妹");
+    private   static  List<String> nameListB = ImmutableList.of("素云涛", "唐三三", "小五五", "马中山", "马僻静", "马肥羊");
+    private   static  List<String> nameListC = ImmutableList.of("张三", "李四", "王二", "麻子", "上官玩儿", "马可菠萝");
+
     public static void main(String[] args) {
         /*
          *  匹配到姓马的并去重然后放入一个新的集合中
          */
-        List<String> nameListA = ImmutableList.of("素云云", "马云云", "腾花花", "阿娇娇", "马飞飞", "廖妹妹");
-        List<String> nameListB = ImmutableList.of("素云涛", "唐三三", "小五五", "马中山", "马僻静", "马肥羊");
-        List<String> nameListC = ImmutableList.of("张三", "李四", "王二", "麻子", "上官玩儿", "马可菠萝");
         Set<String> nameSet = new HashSet<>();
         nameListA.forEach(n -> {
             if (n.startsWith("马")) {
