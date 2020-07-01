@@ -5,20 +5,21 @@ import org.junit.Test;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateTest {
     @Test
     public void test() throws ParseException {
-        /*Calendar instance = Calendar.getInstance();
+        Calendar instance = Calendar.getInstance();
         Long time = (instance.getTimeInMillis()/1000);
-       *//* Date time1 = instance.getTime();
+        Date time1 = instance.getTime();
         System.out.println("time1:"+time1);
-        System.out.println(time);*//*
+        System.out.println(time);
         System.out.println(conversionTime(time.toString()));
         String date="2020-06-01 00:00:00";
         String startTime=date.substring(0, 10);
-        System.out.println(startTime);*/
+        System.out.println(startTime);
 
         /**
          * 生成DateFormat类对象的固定格式

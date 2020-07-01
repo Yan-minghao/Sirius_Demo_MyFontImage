@@ -1,4 +1,4 @@
-package com.sirius.test.guava;
+package com.sirius.guava;
 
 import com.google.common.collect.ImmutableList;
 
